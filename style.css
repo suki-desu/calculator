@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap');
+body
+{
+    background: linear-gradient(to bottom, #00bfff, #ffc0cb, #ff69b4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    user-select: none;
+}
+.wrap
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    width: 500px;
+    place-items: center;
+    display: grid;
+    height: 700px;
+    border-radius: 25px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+.tb
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: right;
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+}
+.clr
+{
+    background-color: #ff4136;
+    border: #ff4136;
+}
+.clr, .div, .mul, .min
+{
+    border-radius: 14px;
+    width: 85px;
+    height: 75px;
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.nm7, .nm8, .nm9
+{
+    border-radius: 14px;
+    width: 85px;
+    height: 75px;
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.add
+{
+    border: none;
+    background-color: #10aded;
+    border-radius: 14px;
+    width: 85px;
+    position: absolute;
+    height: 170px;
+    margin-left: 7px;
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+}
+.nm4, .nm5, .nm6
+{
+    border-radius: 14px;
+    width: 85px;
+    font-size: 30px;
+    height: 75px;
+    font-family: 'Unbounded', cursive;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.nm1, .nm2, .nm3
+{
+    transition: .1s;
+    border-radius: 14px;
+    width: 85px;
+    height: 75px;
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.nm0
+{
+    border-radius: 14px;
+    width: 175px;
+    height: 75px;
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.dot
+{
+    border-radius: 14px;
+    width: 85px;
+    height: 75px;    
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.equ
+{
+    border: #4ca64c;
+    border-radius: 14px;
+    width: 85px;
+    position: absolute;
+    height: 180px;
+    margin-left: 9px;
+    top: 480px;
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    background-color: #4ca64c;
+}
+
+@keyframes colorchange 
+{
+    0% 
+    {
+        background-image: linear-gradient(to bottom, #191970, #ffc0cb);
+    }
+    50% 
+    {
+         background-image: linear-gradient(to bottom, #000080, #ffc0cb, #ffd700);
+    }
+    100%
+    {
+        background-image: linear-gradient(to bottom, #00bfff, #ffc0cb, #ff69b4);
+    }
+}
+.nm1:hover, .nm2:hover, .nm3:hover, .nm4:hover, .nm5:hover, .nm6:hover, .nm7:hover, .nm8:hover, .nm9:hover, .nm0:hover, .clr:hover, .min:hover, .mul:hover, .div:hover, .dot:hover
+{
+    background-color: rgba(0, 153, 255, 0.5);
+}
+.add:hover
+{
+    background-color: #ffa600;
+}
+.equ:hover
+{
+    
+}

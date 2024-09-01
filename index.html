@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+  <form class="wrap">
+    <div class="contain">
+      <input type="text" name="display" value=" " id="tb" class="tb" readonly disabled="disabled">
+      <br><br>
+      <input type="button" value="C" onclick="this.form.display.value=''" class="clr">
+      <input type="button" value="÷" onclick="this.form.display.value+='/'" class="div">
+      <input type="button" value="x" onclick="this.form.display.value+='*'" class="mul">
+      <input type="button" value="-" onclick="this.form.display.value+='-'" class="min">
+      <br><br>
+      <input type="button" value="7" onclick="this.form.display.value+='7'" class="nm7">
+      <input type="button" value="8" onclick="this.form.display.value+='8'" class="nm8">
+      <input type="button" value="9" onclick="this.form.display.value+='9'" class="nm9">
+      <input type="button" value="+" onclick="this.form.display.value+='+'" class="add">
+      <br><br>
+      <input type="button" value="4" onclick="this.form.display.value+='4'" class="nm4">
+      <input type="button" value="5" onclick="this.form.display.value+='5'" class="nm5">
+      <input type="button" value="6" onclick="this.form.display.value+='6'" class="nm6">
+      <br><br>
+      <input type="button" value="1" onclick="this.form.display.value+='1'" class="nm1">
+      <input type="button" value="2" onclick="this.form.display.value+='2'" class="nm2">
+      <input type="button" value="3" onclick="this.form.display.value+='3'" class="nm3">
+      <br><br>
+      <input type="button" value="0" onclick="this.form.display.value+='0'" class="nm0">
+      <input type="button" value="." onclick="this.form.display.value+='.'" class="dot" id="dot">
+      <input type="button" value="=" onclick="this.form.display.value='Gusto Kita'" class="equ">
+
+       <!-- <input type="button" value="=" onclick="this.form.display.value=eval(this.form.display.value)" class="equ"> -->
+    </div>
+  </form>
+</body>
+
+</html>
